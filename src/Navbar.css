@@ -1,17 +1,35 @@
-/*     */
+/*     
+
+    This file contains the CSS styles for the Navbar component.
+    It includes styles for the navbar, links, and responsive design.
+    The styles are applied to the Navbar component in the React application.
+    The CSS is written in a modular way to ensure that it only affects the Navbar component.
+    The styles are designed to be responsive and adapt to different screen sizes.
+    The navbar has a background color, padding, and box shadow for a modern look.
+    The links are styled with no text decoration and have a margin for spacing.
+    The media queries adjust the styles for smaller screens to ensure usability.
+    The navbar is designed to be flexible and adapt to different screen sizes.
+
+
+*/
+/* The code below styles the Navbar component. */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 350px;
-    margin-top: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(17, 1, 1, 0.1);
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-    text-align: center;
+    display: flex;  /* This makes the navbar a flex container */
+    flex-direction: row;  /* This makes the navbar items align in a row */
+    justify-content: space-between; /* This spaces the items evenly */
+    background-color: #f9f9f9;  /* This sets the background color of the navbar */
+    align-items: center;    /* This vertically centers the items */
+    padding: 0% 350px;  /* This adds padding to the navbar */
+    margin-top: 10px;   /* This adds a margin to the top of the navbar */
+    border-radius: 5px; /* This rounds the corners of the navbar */
+    box-shadow: 0 2px 4px rgba(17, 1, 1, 0.1);  /* This adds a shadow to the navbar */
+    position: relative;  /* This positions the navbar relative to its parent */
+    font-family: Arial, sans-serif; /* This sets the font family of the navbar */
+    font-size: 16px;    /* This sets the font size of the navbar */
+    color: #333;    /* This sets the text color of the navbar */
+    text-align: center; /* This centers the text in the navbar */
+    margin: 10px 20px 0 20px; /* This adds a margin to the navbar */
+    padding: 20px;  /* This adds padding to the navbar */
 }
 
 .navbar a {
@@ -35,7 +53,7 @@ li {
 @media screen and (max-width: 1440px) {
     .navbar {
         flex-direction: row;
-        padding: 0% 150px;
+        padding: 0% 15px;
     }
     .navbar a {
         margin: 5px 0;
@@ -95,3 +113,10 @@ li {
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
