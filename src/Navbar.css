@@ -17,11 +17,10 @@
     display: flex;  /* This makes the navbar a flex container */
     flex-direction: row;  /* This makes the navbar items align in a row */
     justify-content: space-between; /* This spaces the items evenly */
+    background-color: #f9f9f9;  /* This sets the background color of the navbar */
     align-items: center;    /* This vertically centers the items */
-    background-color: #fff; /* This sets the background color of the navbar */
     padding: 0% 350px;  /* This adds padding to the navbar */
     margin-top: 10px;   /* This adds a margin to the top of the navbar */
-    background-color: #f9f9f9;  /* This sets the background color of the navbar */
     border-radius: 5px; /* This rounds the corners of the navbar */
     box-shadow: 0 2px 4px rgba(17, 1, 1, 0.1);  /* This adds a shadow to the navbar */
     position: relative;  /* This positions the navbar relative to its parent */
@@ -29,8 +28,7 @@
     font-size: 16px;    /* This sets the font size of the navbar */
     color: #333;    /* This sets the text color of the navbar */
     text-align: center; /* This centers the text in the navbar */
-    margin-right: 20px; /* This adds a margin to the right of the navbar */
-    margin-left: 20px;  /* This adds a margin to the left of the navbar */
+    margin: 10px 20px 0 20px; /* This adds a margin to the navbar */
     padding: 20px;  /* This adds padding to the navbar */
 }
 
